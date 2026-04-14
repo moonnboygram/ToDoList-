@@ -134,7 +134,7 @@ def mark_done():
 entry = tk.Entry(master, width=40)
 entry.pack(pady=10)
 
-add_btn = tk.Button(master, text="Add Task", fg="white", bg="red", command=add_task)
+add_btn = tk.Button(master, text="Add Task", fg="white", bg="black", command=add_task)
 add_btn.pack()
 
 listbox = tk.Listbox(master, height=15, width=50)
@@ -142,14 +142,14 @@ listbox.pack(pady=10)
 
 listbox.bind("<<ListboxSelect>>", on_select)
 
-donebtn = tk.Button(master, text="Done", fg="white", bg="red", command=mark_done)
+donebtn = tk.Button(master, text="Done", fg="white", bg="black", command=mark_done)
 donebtn.pack()
 
-deletebtn = tk.Button(master, text="Delete", fg="white", bg="red", command=delete_task)
+deletebtn = tk.Button(master, text="Delete", fg="white", bg="black", command=delete_task)
 deletebtn.place(x=100, y=330)
 
-updatebtn = tk.Button(master, text="Update", fg="white", bg="red", command=updatetask)
-updatebtn.place(x=346, y=330)
+updatebtn = tk.Button(master, text="Update", fg="white", bg="black", command=updatetask)
+updatebtn.place(x=352, y=330)
 
 # ---------------- START ----------------
 refreshtask()
