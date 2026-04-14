@@ -41,7 +41,7 @@ def add_task():
         msg.showinfo ("Alert", "Enter a task")
 
         return
-    
+    I no like Naija
     con = sqlite3.connect("todolist.db")
     cur = con.cursor()
 
